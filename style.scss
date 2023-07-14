@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   // height:100%;
-  font-family: "San Francisco";
+  font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
 }
 
 @font-face {
@@ -105,6 +105,7 @@ body {
     } 
   }
 }
+
 #mac_modal3{
   display: grid;
   place-items: center;
@@ -160,8 +161,8 @@ body {
 
 .intro-table-container{
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .blind {
@@ -171,35 +172,39 @@ body {
   clip-path: circle(0%);
   overflow: hidden;
 }
-img{
-  height: 400px;
-  width: 300px;
+.profile_img{
+  height: 300px;
+  width: 250px;
   border-radius: 3px;
+  box-shadow: 5px 5px 20px black;
 }
 .card{
   display: flex;
   flex-direction: column;
-  width: 300px;
   height: 400px;
+  width: 300px;
   box-shadow:5px 5px 20px black;
   overflow: hidden;
   border-radius: 3px;
 }
-.intro{
+.profile_intro{
   position:relative;
   z-index: 10;
   height:90px;
-  width:300px;
+  width:250px;
   padding:6px;
   box-sizing:border-box;
   background:rgb(27,27,27,.5);
   color: white;
+  box-shadow:5px 5px 20px black;
+  border-radius: 3px;
 }
 h1{
   margin:10px;
   font-size:40px;
   text-align: center;
 }
+
 
 .menu-bar {
   width: 100%;
@@ -304,6 +309,9 @@ h1{
     backdrop-filter: blur(13px);
     -webkit-backdrop-filter: blur(13px);
     border: 1px solid rgba(255, 255, 255, 0.18);
+    position:absolute;
+    bottom: 20px;
+
 
     .li-bin {
       margin-left: 20px;
@@ -411,6 +419,7 @@ table {
    td {
     border-bottom: 1px solid rgba(0,0,0,.1);
     background: #fff;
+    font-weight: bold;
   }
   
   a {
